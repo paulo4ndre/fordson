@@ -1343,19 +1343,19 @@ body.editing ul.collapsibletopics .fordsoncourseformat .content .summarytext {
 
 /* custom css */
 .path-mod-lesson .slideshow {
-	width: 100% ! important; 
-	height: auto!important; 
+	width: 100% !important; 
+	height: auto !important; 
 	text-align: center;
 }
 
-.lessonbutton a, .singlebutton button, #id_submitbutton {
+.lessonbutton a, .slideshow .singlebutton button, #id_submitbutton {
 	color: #212529;
 	background-color: #393939; 
 	border-color: #ee7565; 
 	color: #fff; 
-	width: 100px; 
-	height: 100px; 
-	border-radius: 50%; 
+	width: 180px; 
+	height: 60px; 
+	border-radius: 20px; 
 	overflow: hidden; 
 	float: left; 
 	margin: 15px; 

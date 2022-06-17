@@ -28,11 +28,25 @@ user_preference_allow_ajax_update('drawer-open-nav', PARAM_ALPHA);
 require_once($CFG->libdir . '/behat/lib.php');
 
 $hasfhsdrawer = isset($PAGE->theme->settings->shownavdrawer) && $PAGE->theme->settings->shownavdrawer == 1;
-if (isloggedin() && $hasfhsdrawer && isset($PAGE->theme->settings->shownavclosed) && $PAGE->theme->settings->shownavclosed == 0) {
-    $navdraweropen = (get_user_preferences('drawer-open-nav', 'true') == 'true');
-} else {
-    $navdraweropen = false;
+// Custom Paulo
+
+$admins = get_admins(); 
+$isadmin = false; 
+
+foreach ($admins as $admin) { 
+	//var_dump($admin->id);
+	if ($USER->id == $admin->id) { 
+		$isadmin = true; break; 
+	} 
+} 
+if ($isadmin) { 
+	if (isloggedin() && $hasfhsdrawer && isset($PAGE->theme->settings->shownavclosed) && $PAGE->theme->settings->shownavclosed == 0) {
+		$navdraweropen = (get_user_preferences('drawer-open-nav', 'true') == 'true');
+	} else {
+		$navdraweropen = false;
+	}
 }
+
 $extraclasses = [];
 if ($navdraweropen) {
     $extraclasses[] = 'drawer-open-left';

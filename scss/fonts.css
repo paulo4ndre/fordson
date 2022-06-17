@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap');
+
+.lessonbutton a, .singlebutton button, #id_submitbutton {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-fhs{
+	display: none;
+}
