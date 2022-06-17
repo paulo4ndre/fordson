@@ -1341,25 +1341,35 @@ body.editing ul.collapsibletopics .fordsoncourseformat .content .summarytext {
     padding: 1rem;
 }
 
-/* custom css */
+/* custom css por Andréa e Paulo */
 .path-mod-lesson .slideshow {
 	width: 100% ! important; 
 	height: auto!important; 
 	text-align: center;
+    background-color: #212247 !important;
 }
 
+.path-mod-lesson .slideshow p,h3 {color: #fff;}
+.ongoing {text-align: center; color: #fff;}
+
 .lessonbutton a, .singlebutton button, #id_submitbutton {
-	color: #212529;
-	background-color: #393939; 
-	border-color: #ee7565; 
-	color: #fff; 
-	width: 100px; 
-	height: 100px; 
-	border-radius: 50%; 
-	overflow: hidden; 
-	float: left; 
-	margin: 15px; 
-	transition: 0.3s ease;
+color: #201f41;
+background-color: #e8644c;
+border-bottom: 10px solid #bf3d30;
+width: auto;
+height: 74px;
+border-radius: 35px;
+overflow: hidden;
+float: left;
+margin: 15px;
+-webkit-transition: .3s ease;
+-o-transition: .3s ease;
+transition: .3s ease;
+font-weight: bold;
+font-size: 1.5em;
+border-top: 0;
+border-left: 0;
+border-right: 0;
 }
 
 #id_pageheadercontainer .answeroption {
@@ -1375,7 +1385,12 @@ body.editing ul.collapsibletopics .fordsoncourseformat .content .summarytext {
     margin: 0 auto;
     background-color: #202044;
     color: #fff;
-    padding: 2em;}
+    padding: 2em;font-size: 24px; font-weight: bold; }
+
+ 
 
 .fcontainer .answeroption .col-md-3 {display:none;}
+.fcontainer .answeroption {font-size: 18px; font-weight: initial; margin-top: 30px;}
+
+#page-header {display: none !important;}
 
